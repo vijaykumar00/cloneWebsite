@@ -10,13 +10,14 @@
       <div class="parent">
 
     <div class="bil__page" id="userd">
-      
+        <form action="html" onsubmit="validateForm()">
       <div class="user" id="billing">
         <h1>Billing Details</h1>
+        
         <label class="lab">First & last name</label><br />
-        <input class="inp_t" type="text" id="fullname" placeholder="Enter user name" /><br />
+        <input class="inp_t" type="text" id="fullname" placeholder="Enter user name" required /><br />
         <lable class="lab">Enter email</lable><br />
-        <input class="inp_t"  type="email" id="email" placeholder="Enter your email" /><br />
+        <input class="inp_t"  type="email" id="email" placeholder="Enter your email" required /><br />
         <label class="lab">Country:</label><br />
         <select class="slct">
           <option id="cntry">Choose Country</option></select
@@ -66,10 +67,10 @@
     
     
     <div class="button">
-        <a href="home.html" class="button">Place Order</a>
-      <input type="button"  class="button" />
+      <input type="submit"  class="button"  value="Place Order" id ="btn"/>
       </div>
       </div>
+      </form>
       </div>
       </div>
       <script src="script.js"></script>
