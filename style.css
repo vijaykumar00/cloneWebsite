@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+  
+ 
+    
+}
+.parent{
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(139, 193, 218),white);
+   display: flex;
+   
+    height: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    border: 15px thick rgb(90, 169, 221);
+    padding: 50px;
+    margin: 20px;
+
+  
+}
+.bil__page{
+   
+    box-sizing: border-box;
+     display: table;
+    justify-content: space-evenly;
+    align-items: center;
+    
+   
+   
+  
+    
+}
+.user{
+   
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+.user h1{
+    font-size: larger;
+  padding-bottom: 14px;
+    
+}
+.payment{
+    font-family: sans-serif;
+    margin-top: 30px;
+    top: 50%;
+    font-size: 12px;
+}
+  
+   
+
+.payment h1{
+    font-size: larger;
+
+ 
+}
+
+
+.pmt{
+    width: 180px;
+    border:black solid 2px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 6px;
+    
+
+    
+}
+
+
+.paypal{
+    width: 180px;
+    border:black solid 2px;
+    height: 20px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    padding: 6px;
+   
+}
+
+  .button{
+    background-color: #11833d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.inp_t{
+    border-radius: 5px;
+    padding: 6px;
+}
+.slct{
+    border-radius: 5px;
+    padding: 3px;
+    width:180px ;
+
+}
+.card--img{
+    border-radius: 5px;
+    padding: 6px;
+    
+
+}
+.inp_p{
+    border-radius: 5px;
+    padding: 6px;
+}
+.slcp{
+    border-radius: 5px;
+    padding: 3px;
+    width:180px ;
+}
+
+.lab{
+    display: block;
+    padding-top: 12px;
+
+}

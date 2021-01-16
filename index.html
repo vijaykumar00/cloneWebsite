@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="parent">
+
+    <div class="bil__page" id="userd">
+      
+      <div class="user" id="billing">
+        <h1>Billing Details</h1>
+        <label class="lab">First & last name</label><br />
+        <input class="inp_t" type="text" id="fullname" placeholder="Enter user name" /><br />
+        <lable class="lab">Enter email</lable><br />
+        <input class="inp_t"  type="email" id="email" placeholder="Enter your email" /><br />
+        <label class="lab">Country:</label><br />
+        <select class="slct">
+          <option id="cntry">Choose Country</option></select
+        ><br />
+        <label class="lab">State/Country</label><br />
+        <select class="slct">
+          <option id="state">Choose State</option></select
+        ><br />
+        <label class="lab">Zip/postel code:</label><br />
+        <input class="inp_t"  type="number" /><br />
+      </div>
+
+      
+
+        <div class="payment">
+            <h1>Payment method</h1>
+          <div class="pmt">
+            <input type="checkbox" id="pmc"/>
+            Credit card
+          </div>
+          
+          <div class="card--img">
+            <label>Card number:</label><br>
+            <input class="inp_p"   type="text"/>
+          </div>
+          
+          <label class="lab">Expiration Date:</label><br />
+
+          <select id="month">
+            Month
+            <option class="slcp">Month</option>
+          </select>
+          <select id="year">
+            <option class="slcp">Year</option>
+          </select>
+          <label class="lab">Security code:</label>
+          <input  class="inp_p" type="text" placeholder="three-digits" id="code" /><br />
+        
+
+        <div class="paypal">
+          <input  class="inp_p" type="checkbox" value="Paypal" placeholder="Paypal" />Paypal
+        </div>
+     
+      <p>
+        by clicking button you agree to the <a href="#">Terms and Condition</a>
+      </p>
+    
+    
+    <div class="button">
+        <a href="home.html" class="button">Place Order</a>
+      <input type="button"  class="button" />
+      </div>
+      </div>
+      </div>
+      </div>
+      <script src="script.js"></script>
+    
+    
+  </body>
+</html>
