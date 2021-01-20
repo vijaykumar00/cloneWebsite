@@ -1,80 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Billing</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      <div class="parent">
-
-    <div class="bil__page" id="userd">
-        <form action="html" onsubmit="validateForm()">
-      <div class="user" id="billing">
-        <h1>Billing Details</h1>
-        
-        <label class="lab">First & last name</label><br />
-        <input class="inp_t" type="text" id="fullname" placeholder="Enter user name" required /><br />
-        <lable class="lab">Enter email</lable><br />
-        <input class="inp_t"  type="email" id="email" placeholder="Enter your email" required /><br />
-        <label class="lab">Country:</label><br />
-        <select class="slct">
-          <option id="cntry">Choose Country</option></select
-        ><br />
-        <label class="lab">State/Country</label><br />
-        <select class="slct">
-          <option id="state">Choose State</option></select
-        ><br />
-        <label class="lab">Zip/postel code:</label><br />
-        <input class="inp_t"  type="number" /><br />
-      </div>
-
-      
-
-        <div class="payment">
-            <h1>Payment method</h1>
-          <div class="pmt">
-            <input type="checkbox" id="pmc"/>
-            Credit card
-          </div>
-          
-          <div class="card--img">
-            <label>Card number:</label><br>
-            <input class="inp_p"   type="text"/>
-          </div>
-          
-          <label class="lab">Expiration Date:</label><br />
-
-          <select id="month">
-            Month
-            <option class="slcp">Month</option>
-          </select>
-          <select id="year">
-            <option class="slcp">Year</option>
-          </select>
-          <label class="lab">Security code:</label>
-          <input  class="inp_p" type="text" placeholder="three-digits" id="code" /><br />
-        
-
-        <div class="paypal">
-          <input  class="inp_p" type="checkbox" value="Paypal" placeholder="Paypal" />Paypal
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="contanier">
      
-      <p>
-        by clicking button you agree to the <a href="#">Terms and Condition</a>
-      </p>
+      <div class="container__1">
+        
+        <h1 class="Bill">Billing</h1>
+        <form>
+          <div class="input__wrap">
+ <label for="">FullName:</label>
+  <input type="text" placeholder="Enter Your Fullname" required>
+          </div>
+        <div class="input__wrap">
+<label for="">Email:</label>
+<input type="email" placeholder="email" required>
+</div>
+<div class="input__wrap">
+<lable for="">Password:</lable>
+<input  type="password" placeholder="enter password" required>
+</div>
+
+
+<div class="paymentbox">
+  <div class="">
+  <input type="radio" >
+  <label>Credit Card</label>
+  </div>
+  <div class="imglogo">
+  <img src="visa.png">
+  <img src="mc.png" >
+  <img src="rupay.png" >
+   </div>
+</div>
+
+
+
+</div>
+  <div class="container__2">
+    <h1 class="Bill">Billing address </h1>
+    <div class="input__wrap">
+    <label>Street</label>
+    <input  type="text" placeholder="Street">
+    </div>
+    <div class="input__wrap">
+    <lable>City</lable>
+    <input type="text" placeholder="city">
+    </div>
+    <div class="input__wrap">
+    <lable>Zip</lable>
+    <input  type="text" placeholder="Zip">
+    </div>
+    <h1 class="Bill">Your payment information</h1>
+  <div class="paymentinfo">
     
+    <div class="logo">
+<img src="visa.png">
+    </div>
+    <div class="logo">
+<img src="mc.png">
+
+    </div>
+    <div class="logo">
+   <img src="rupay.png">
+
+    </div>
     
-    <div class="button">
-      <input type="submit"  class="button"  value="Place Order" id ="btn"/>
-      </div>
-      </div>
+  </div>
+
+  <p>By clicking checkout Now you agree to the <a href="#">Term of service</a>  and  <a href="#">Privacy Policy</a></p>
+  
+
+
+  
+</div>
+<div class="button">
+<input type="submit" value="Checkout Now">
+</div>
+      
       </form>
-      </div>
-      </div>
-      <script src="script.js"></script>
-    
-    
-  </body>
+  </div>
+ 
+  
+</body>
 </html>
